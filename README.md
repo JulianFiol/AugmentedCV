@@ -1,4 +1,4 @@
-# Unity3D_AugmentedReality
+# AugmentedCV
 AR Unity3D Vuforia
 
 First try with Unity3D and Vuforia
