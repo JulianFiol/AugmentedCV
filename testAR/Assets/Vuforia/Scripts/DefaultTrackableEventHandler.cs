@@ -20,7 +20,7 @@ namespace Vuforia
     
         #endregion // PRIVATE_MEMBER_VARIABLES
 
-
+		public AudioSource sound;
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
     
@@ -52,10 +52,12 @@ namespace Vuforia
                 newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
             {
                 OnTrackingFound();
+				sound.Play();
             }
             else
             {
                 OnTrackingLost();
+				sound.Stop();
             }
         }
 
